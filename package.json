@@ -1,0 +1,58 @@
+{
+  "name": "@myunidavid/v2-sdk",
+  "license": "MIT",
+  "version": "3.2.7",
+  "description": "🛠 An SDK for building applications on top of Uniswap V2,powered by uniswap  thanks for uni",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testuniswap/dd-v2-sdk.git"
+  },
+  "keywords": [
+    "myuni",
+    "ethereum"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "module": "dist/v2-sdk.esm.js",
+  "scripts": {
+    "lint": "tsdx lint src test",
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test",
+    "prepublishOnly": "tsdx build"
+  },
+  "dependencies": {
+    "@ethersproject/address": "^5.0.0",
+    "@ethersproject/solidity": "^5.0.0",
+    "@uniswap/sdk-core": "^4.0.7",
+    "tiny-invariant": "^1.1.0",
+    "tiny-warning": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/big.js": "^4.0.5",
+    "@types/jest": "^24.0.25",
+    "@uniswap/v2-core": "^1.0.1",
+    "tsdx": "^0.13.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true
+  },
+  "bugs": {
+    "url": "https://github.com/testuniswap/dd-v2-sdk/issues"
+  },
+  "homepage": "https://github.com/testuniswap/dd-v2-sdk#readme",
+  "author": ""
+}
